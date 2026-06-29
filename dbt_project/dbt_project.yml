@@ -1,1 +1,43 @@
+name: enterprise_etl
 
+version: "1.0"
+
+config-version: 2
+
+profile: enterprise_etl
+
+model-paths:
+
+  - models
+
+seed-paths:
+
+  - seeds
+
+macro-paths:
+
+  - macros
+
+snapshot-paths:
+
+  - snapshots
+
+test-paths:
+
+  - tests
+
+models:
+
+  enterprise_etl:
+
+    staging:
+
+      +materialized: view
+
+    intermediate:
+
+      +materialized: view
+
+    marts:
+
+      +materialized: table
