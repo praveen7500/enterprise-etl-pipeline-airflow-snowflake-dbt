@@ -1,1 +1,21 @@
+SELECT
 
+ORDER_ID,
+
+CUSTOMER_ID,
+
+PRODUCT,
+
+CATEGORY,
+
+QUANTITY,
+
+PRICE,
+
+TOTAL_AMOUNT,
+
+ORDER_DATE,
+
+REGION
+
+FROM {{ ref('int_sales') }}
