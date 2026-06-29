@@ -1,1 +1,33 @@
+project:
 
+  name: Enterprise ETL Pipeline
+
+  version: 1.0
+
+aws:
+
+  region: ap-south-1
+
+  bucket: sample-etl-bucket
+
+snowflake:
+
+  warehouse: COMPUTE_WH
+
+  database: SALES_DB
+
+  schema: PUBLIC
+
+airflow:
+
+  retries: 2
+
+  retry_delay: 5
+
+notifications:
+
+  slack: true
+
+  email: true
+
+  sns: true
