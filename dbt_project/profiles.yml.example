@@ -1,0 +1,25 @@
+enterprise_etl:
+
+  target: dev
+
+  outputs:
+
+    dev:
+
+      type: snowflake
+
+      account: ACCOUNT
+
+      user: USERNAME
+
+      password: PASSWORD
+
+      role: ACCOUNTADMIN
+
+      warehouse: COMPUTE_WH
+
+      database: SALES_DB
+
+      schema: PUBLIC
+
+      threads: 4
