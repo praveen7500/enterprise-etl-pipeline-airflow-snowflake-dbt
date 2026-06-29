@@ -1,0 +1,6 @@
+Order_ID,Customer_ID,Product,Category,Quantity,Price,Region,Order_Date
+1001,C001,Laptop,Electronics,1,65000,South,2026-01-01
+1002,C002,Phone,Electronics,2,25000,North,2026-01-03
+1003,C003,Chair,Furniture,4,5000,East,2026-01-04
+1004,C004,Table,Furniture,1,8000,West,2026-01-06
+1005,C005,Keyboard,Accessories,3,1200,South,2026-01-07
