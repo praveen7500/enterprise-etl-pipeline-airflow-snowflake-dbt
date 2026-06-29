@@ -1,0 +1,7 @@
+SELECT DISTINCT
+
+PRODUCT,
+
+CATEGORY
+
+FROM {{ ref('stg_sales') }}
