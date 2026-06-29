@@ -1,1 +1,13 @@
+account: your_account
 
+user: your_username
+
+password: your_password
+
+warehouse: COMPUTE_WH
+
+database: SALES_DB
+
+schema: PUBLIC
+
+role: ACCOUNTADMIN
