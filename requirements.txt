@@ -1,4 +1,13 @@
 apache-airflow==2.10.0
+apache-airflow==2.10.0
+
+apache-airflow-providers-amazon
+
+apache-airflow-providers-snowflake
+
+apache-airflow-providers-slack
+
+apache-airflow-providers-http
 
 snowflake-connector-python==3.12.0
 
