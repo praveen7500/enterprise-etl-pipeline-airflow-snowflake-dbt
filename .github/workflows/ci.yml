@@ -1,4 +1,4 @@
-name: ETL Pipeline CI
+name: Enterprise ETL CI
 
 on:
 
@@ -22,24 +22,32 @@ jobs:
 
     steps:
 
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+    - name: Python
 
-        with:
+      uses: actions/setup-python@v5
 
-          python-version: "3.11"
+      with:
 
-      - name: Install Dependencies
+        python-version: "3.11"
 
-        run: |
+    - name: Install
 
-          python -m pip install --upgrade pip
+      run: |
 
-          pip install -r requirements.txt
+        pip install -r requirements.txt
 
-      - name: Run Tests
+    - name: Run Tests
 
-        run: |
+      run: |
 
-          pytest
+        pytest
+
+    - name: Lint
+
+      run: |
+
+        pip install flake8
+
+        flake8 scripts
